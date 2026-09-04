@@ -42,11 +42,11 @@ Design principle:
 
 LedgerPilot deliberately separates financial correctness from AI reasoning.
 
--Deterministic software performs validation, reconciliation, monetary calculations, exception classification, and priority scoring.
--The AI Controller investigates exceptions, retrieves evidence, explains findings, and recommends actions.
--The AI cannot modify financial records or resolve exceptions directly.
--Human approval is required before any exception resolution is recorded.
--Every human action is recorded in the Audit Log, while approved resolutions can be retained as Case Memory for future investigations.
+1. Deterministic software performs validation, reconciliation, monetary calculations, exception classification, and priority scoring.
+2. The AI Controller investigates exceptions, retrieves evidence, explains findings, and recommends actions.
+3. The AI cannot modify financial records or resolve exceptions directly.
+4. Human approval is required before any exception resolution is recorded.
+5. Every human action is recorded in the Audit Log, while approved resolutions can be retained as Case Memory for future investigations.
 
 ## 5. AI components
 
@@ -122,14 +122,14 @@ The evaluation runs the same reconciliation pipeline used by the application and
 
 The evaluation measures:
 
--Precision
--Recall
--F1 score
--Macro and weighted category performance
--Detection rate
--False positives and false negatives
--Processing throughput
--Unresolved monetary exposure
+1. Precision
+2. Recall
+3. F1 score
+4. Macro and weighted category performance
+5. Detection rate
+6. False positives and false negatives
+7. Processing throughput
+8. Unresolved monetary exposure
 
 This prevents the system from being evaluated using only cherry-picked successful matches.
 
@@ -158,9 +158,9 @@ See [`docs/evaluation.md`](docs/evaluation.md) for the complete methodology, cat
 
 The LedgerPilot dashboard provides three main views:
 
--Exception Queue — prioritized reconciliation exceptions with severity, affected amount, confidence, and investigation actions.
--Audit Trail — records human approvals, rejections, and investigation evidence.
--Evaluation — displays reconciliation and model evaluation metrics.
+1. Exception Queue — prioritized reconciliation exceptions with severity, affected amount, confidence, and investigation actions.
+2. Audit Trail — records human approvals, rejections, and investigation evidence.
+3. Evaluation — displays reconciliation and model evaluation metrics.
 
 The dashboard is implemented using Streamlit and connects directly to the LedgerPilot service layer and SQLite database.
 
@@ -216,33 +216,33 @@ The final test suite contains **22 automated tests**, covering core reconciliati
 
 ## 16. Demo workflow
 
-1.Run python run.py setup to generate the synthetic financial data and populate SQLite.
-2.Run python run.py dashboard to launch the Streamlit interface.
-3.Review the top-level reconciliation metrics.
-4.Open the Exception Queue and select a high-priority exception.
-5.Ask the AI Finance Controller to investigate the selected exception.
-6.Review the structured FACT / INFERENCE / RECOMMENDATION response and supporting evidence.
-7.As the human reviewer, Approve, Reject, or request further investigation.
-8.Open the Audit Trail to verify that the human action and supporting evidence were recorded.
-9.Open the Evaluation tab to review the reconciliation and evaluation metrics.
+1. Run python run.py setup to generate the synthetic financial data and populate SQLite.
+2. Run python run.py dashboard to launch the Streamlit interface.
+3. Review the top-level reconciliation metrics.
+4. Open the Exception Queue and select a high-priority exception.
+5. Ask the AI Finance Controller to investigate the selected exception.
+6. Review the structured FACT / INFERENCE / RECOMMENDATION response and supporting evidence.
+7. As the human reviewer, Approve, Reject, or request further investigation.
+8. Open the Audit Trail to verify that the human action and supporting evidence were recorded.
+9. Open the Evaluation tab to review the reconciliation and evaluation metrics.
 
 The complete workflow demonstrates the core design principle: the system can investigate and recommend, but a human remains responsible for the final financial decision.
 
 ## 17. Limitations
 
--MISSING_SETTLEMENT and INVALID_REFERENCE remain weaker exception categories and would benefit from additional tuning and broader test coverage.
--The LLM-powered investigation path depends on an external API key. The deterministic fallback remains available when an API key is not configured.
--The current system does not perform fuzzy customer-level entity resolution.
--The dashboard is designed as a single-user demonstration application rather than a production multi-user finance platform.
--The current architecture does not include a separate FastAPI layer; the Streamlit dashboard communicates with the service layer in-process.
--The synthetic dataset and injected anomalies are designed for evaluation and demonstration rather than representing real production financial data.
+1. MISSING_SETTLEMENT and INVALID_REFERENCE remain weaker exception categories and would benefit from additional tuning and broader test coverage.
+2. The LLM-powered investigation path depends on an external API key. The deterministic fallback remains available when an API key is not configured.
+3. The current system does not perform fuzzy customer-level entity resolution.
+4. The dashboard is designed as a single-user demonstration application rather than a production multi-user finance platform.
+5. The current architecture does not include a separate FastAPI layer; the Streamlit dashboard communicates with the service layer in-process.
+6. The synthetic dataset and injected anomalies are designed for evaluation and demonstration rather than representing real production financial data.
 
 ## 18. Future improvements
 
--Improve detection and precision for weaker exception categories through additional evaluation and tuning.
--Add fuzzy customer-level entity resolution for cases where customer identifiers differ across sources.
--Integrate native LLM function/tool calling for more flexible evidence-driven investigations.
--Add a FastAPI service layer to support programmatic access and multi-client applications.
--Expand evaluation with additional operational metrics such as false-positive rate, processing latency, and investigation quality.
--Add role-based access control and stronger audit/security controls for production deployment.
--Extend the system to support additional financial operations such as settlement forecasting and tax-line reconciliation.
+1. Improve detection and precision for weaker exception categories through additional evaluation and tuning.
+2. Add fuzzy customer-level entity resolution for cases where customer identifiers differ across sources.
+3. Integrate native LLM function/tool calling for more flexible evidence-driven investigations.
+4. Add a FastAPI service layer to support programmatic access and multi-client applications.
+5. Expand evaluation with additional operational metrics such as false-positive rate, processing latency, and investigation quality.
+6. Add role-based access control and stronger audit/security controls for production deployment.
+7. Extend the system to support additional financial operations such as settlement forecasting and tax-line reconciliation.
