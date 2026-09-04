@@ -37,7 +37,7 @@ flowchart TD
     F --> G[Human Approval<br/>Streamlit Dashboard]
     G --> H[Audit Log]
     G --> I[Case Memory]
-
+```
 Design principle:
 
 LedgerPilot deliberately separates financial correctness from AI reasoning.
