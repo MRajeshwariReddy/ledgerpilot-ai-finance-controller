@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# SQLite runtime/database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated archives
+*.zip
+
+# Logs
+*.log
+
+# Development / internal documentation
+FRONTEND_POLISH_SUMMARY.md
+PROJECT_DELIVERY_SUMMARY.md
+HOW_TO_ACCESS_PROJECT.md
+REVIEW_AND_CONTROLLER_UPGRADE.md
+DASHBOARD_IMPROVEMENTS.md
+DATA_GENERATOR_REVIEW.md
+PHASES_COMPLETE.md
+DIAGNOSIS.md
+GIT_UPLOAD_GUIDE.md
+TECHNICAL_DIAGNOSIS.md
+DIAGNOSTIC.md
+PHASE1_COMPLETE.md
+FINAL_DELIVERY.txt
+
+# Frontend development backups
+frontend/app_backup.py
+frontend/app_before_cards.py
+frontend/app_before_priority_colors.py
+frontend/app_before_theme_fix.py
+frontend/app_working_backup.py

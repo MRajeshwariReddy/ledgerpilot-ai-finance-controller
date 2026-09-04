@@ -1,0 +1,484 @@
+order_id,transaction_id,anomaly_type,detail,is_intentional_scenario
+ORD10004,TXN10004B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10006,TXN10006,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10008,TXN10008B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10009,TXN10009,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10010,TXN10010,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10011,TXN10011,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10012,TXN10012,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10013,TXN10013,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10018,TXN10018,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10021,TXN10021,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10023,TXN10023B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10030,TXN10030,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10031,TXN10031,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10032,TXN10032,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10036,TXN10036,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10038,TXN10038,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10041,TXN10041,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10043,TXN10043,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10047,TXN10047,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10051,TXN10051,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10056,TXN10056,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10057,TXN10057,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10060,TXN10060,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10062,TXN10062,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10068,TXN10068,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10078,TXN10078,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10079,TXN10079,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10084,TXN10084,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10086,TXN10086,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10088,TXN10088,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10090,TXN10090,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10093,TXN10093,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10095,TXN10095B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10099,TXN10099,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10101,TXN10101,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10102,TXN10102,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10104,TXN10104,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10105,TXN10105,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10107,TXN10107,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10108,TXN10108,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10109,TXN10109,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10110,TXN10110,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10111,TXN10111,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10112,TXN10112,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10113,TXN10113,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10115,TXN10115,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10116,TXN10116,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10120,TXN10120,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10121,TXN10121,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10124,TXN10124,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10126,TXN10126,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10129,TXN10129,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10133,TXN10133,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10137,TXN10137,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10139,TXN10139,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10140,TXN10140,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10144,TXN10144,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10148,TXN10148,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10155,TXN10155,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10157,TXN10157B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10158,TXN10158,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10163,TXN10163B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10164,TXN10164,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10165,TXN10165,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10167,TXN10167,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10170,TXN10170,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10178,TXN10178,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10179,TXN10179,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10181,TXN10181,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10184,TXN10184,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10185,TXN10185,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10189,TXN10189,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10192,TXN10192,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10193,TXN10193,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10201,TXN10201,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10203,TXN10203,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10204,TXN10204,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10206,TXN10206,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10207,TXN10207,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10208,TXN10208,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10209,TXN10209,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10210,TXN10210,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10212,TXN10212,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10213,TXN10213,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10215,TXN10215,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10216,TXN10216,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10218,TXN10218,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10220,TXN10220,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10223,TXN10223,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10229,TXN10229,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10230,TXN10230,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10235,TXN10235,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10239,TXN10239,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10245,TXN10245B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10247,TXN10247,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10248,TXN10248,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10254,TXN10254,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10259,TXN10259,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10260,TXN10260,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10261,TXN10261,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10263,TXN10263,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10266,TXN10266,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10267,TXN10267,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10270,TXN10270,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10272,TXN10272,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10273,TXN10273,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10274,TXN10274B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10275,TXN10275,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10278,TXN10278,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10279,TXN10279,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10287,TXN10287,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10288,TXN10288,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10290,TXN10290,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10291,TXN10291,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10297,TXN10297,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10303,TXN10303,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10307,TXN10307,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10308,TXN10308,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10309,TXN10309,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10311,TXN10311,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10315,TXN10315,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10316,TXN10316,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10317,TXN10317B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10318,TXN10318B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10321,TXN10321,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10323,TXN10323,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10324,TXN10324B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10325,TXN10325,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10327,TXN10327,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10330,TXN10330,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10332,TXN10332,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10335,TXN10335,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10338,TXN10338B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10339,TXN10339,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10340,TXN10340,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10341,TXN10341,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10342,TXN10342,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10343,TXN10343,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10344,TXN10344B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10346,TXN10346,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10348,TXN10348,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10349,TXN10349,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10351,TXN10351,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10353,TXN10353,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10355,TXN10355,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10357,TXN10357,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10358,TXN10358B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10359,TXN10359B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10360,TXN10360,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10361,TXN10361,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10363,TXN10363,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10364,TXN10364,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10366,TXN10366,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10368,TXN10368,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10369,TXN10369,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10371,TXN10371,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10372,TXN10372,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10374,TXN10374,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10380,TXN10380,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10388,TXN10388,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10389,TXN10389,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10395,TXN10395B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10397,TXN10397,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10400,TXN10400,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10402,TXN10402,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10403,TXN10403,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10404,TXN10404,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10405,TXN10405,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10406,TXN10406B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10407,TXN10407B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10410,TXN10410,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10414,TXN10414B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10417,TXN10417B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10418,TXN10418,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10419,TXN10419,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10420,TXN10420,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10423,TXN10423,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10424,TXN10424,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10425,TXN10425,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10431,TXN10431,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10432,TXN10432,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10437,TXN10437,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10439,TXN10439,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10440,TXN10440,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10441,TXN10441,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10442,TXN10442,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10443,TXN10443,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10444,TXN10444,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10445,TXN10445,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10447,TXN10447,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10450,TXN10450,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10452,TXN10452,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10453,TXN10453B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10455,TXN10455,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10456,TXN10456B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10459,TXN10459,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10460,TXN10460B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10463,TXN10463,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10466,TXN10466B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10467,TXN10467,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10469,TXN10469,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10470,TXN10470,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10471,TXN10471,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10473,TXN10473,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10474,TXN10474,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10476,TXN10476,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10480,TXN10480,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10482,TXN10482,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10483,TXN10483,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10488,TXN10488,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10490,TXN10490,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10492,TXN10492B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10494,TXN10494,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10499,TXN10499,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10500,TXN10500,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10501,TXN10501B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10503,TXN10503,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10504,TXN10504,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10505,TXN10505,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10507,TXN10507,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10510,TXN10510,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10512,TXN10512,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10514,TXN10514,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10515,TXN10515,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10518,TXN10518,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10520,TXN10520,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10521,TXN10521,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10525,TXN10525,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10530,TXN10530,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10536,TXN10536,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10538,TXN10538,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10542,TXN10542,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10543,TXN10543,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10544,TXN10544,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10545,TXN10545,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10546,TXN10546,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10547,TXN10547,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10548,TXN10548,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10551,TXN10551,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10556,TXN10556,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10557,TXN10557,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10558,TXN10558,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10561,TXN10561,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10563,TXN10563,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10565,TXN10565,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10566,TXN10566,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10567,TXN10567,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10568,TXN10568,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10569,TXN10569B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10570,TXN10570,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10572,TXN10572,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10573,TXN10573,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10574,TXN10574,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10575,TXN10575,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10576,TXN10576,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10578,TXN10578,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10584,TXN10584,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10585,TXN10585B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10586,TXN10586,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10588,TXN10588,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10589,TXN10589,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10592,TXN10592,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10594,TXN10594,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10595,TXN10595B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10596,TXN10596,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10598,TXN10598,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10599,TXN10599,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10600,TXN10600,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10603,TXN10603,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10606,TXN10606,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10607,TXN10607,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10608,TXN10608B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10609,TXN10609,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10615,TXN10615,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10617,TXN10617,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10618,TXN10618,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10620,TXN10620,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10624,TXN10624,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10628,TXN10628,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10629,TXN10629,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10631,TXN10631,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10633,TXN10633,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10634,TXN10634,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10636,TXN10636,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10638,TXN10638,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10639,TXN10639,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10641,TXN10641,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10644,TXN10644,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10645,TXN10645,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10648,TXN10648,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10649,TXN10649,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10652,TXN10652,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10654,TXN10654,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10655,TXN10655,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10656,TXN10656,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10659,TXN10659,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10665,TXN10665,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10666,TXN10666,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10672,TXN10672,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10676,TXN10676,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10677,TXN10677,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10678,TXN10678,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10682,TXN10682,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10684,TXN10684,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10686,TXN10686,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10687,TXN10687,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10689,TXN10689,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10690,TXN10690,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10693,TXN10693,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10694,TXN10694,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10695,TXN10695,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10696,TXN10696,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10700,TXN10700,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10701,TXN10701,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10703,TXN10703,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10705,TXN10705,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10707,TXN10707,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10708,TXN10708,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10709,TXN10709,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10710,TXN10710,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10711,TXN10711,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10713,TXN10713,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10715,TXN10715,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10716,TXN10716,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10718,TXN10718,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10719,TXN10719,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10720,TXN10720,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10721,TXN10721,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10724,TXN10724,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10728,TXN10728,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10733,TXN10733,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10735,TXN10735B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10736,TXN10736B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10738,TXN10738,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10740,TXN10740B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10743,TXN10743B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10746,TXN10746,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10755,TXN10755,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10760,TXN10760B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10764,TXN10764,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10767,TXN10767B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10770,TXN10770,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10771,TXN10771,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10775,TXN10775,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10777,TXN10777,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10779,TXN10779B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10780,TXN10780,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10782,TXN10782,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10784,TXN10784B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10785,TXN10785,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10786,TXN10786,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10789,TXN10789,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10790,TXN10790,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10791,TXN10791,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10795,TXN10795,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10796,TXN10796,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10802,TXN10802,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10807,TXN10807,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10809,TXN10809,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10810,TXN10810,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10811,TXN10811B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10812,TXN10812,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10821,TXN10821,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10822,TXN10822,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10824,TXN10824B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10825,TXN10825,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10827,TXN10827,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10828,TXN10828,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10829,TXN10829,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10830,TXN10830,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10831,TXN10831,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10837,TXN10837,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10842,TXN10842,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10846,TXN10846B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10850,TXN10850,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10851,TXN10851,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10852,TXN10852B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10853,TXN10853,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10856,TXN10856,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10858,TXN10858,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10859,TXN10859,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10862,TXN10862,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10863,TXN10863B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10864,TXN10864B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10866,TXN10866,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10867,TXN10867,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10868,TXN10868,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10871,TXN10871,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10874,TXN10874B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10875,TXN10875,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10878,TXN10878,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10880,TXN10880,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10883,TXN10883,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10884,TXN10884,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10885,TXN10885B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10889,TXN10889,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10891,TXN10891B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10894,TXN10894B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10901,TXN10901,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10904,TXN10904,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10908,TXN10908,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10911,TXN10911,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10913,TXN10913,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10914,TXN10914,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10915,TXN10915,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10921,TXN10921,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10923,TXN10923,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10925,TXN10925,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10926,TXN10926,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10929,TXN10929,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10930,TXN10930,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10932,TXN10932,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10933,TXN10933,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD10934,TXN10934,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10936,TXN10936,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10938,TXN10938,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10940,TXN10940B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10941,TXN10941,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10943,TXN10943,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10950,TXN10950,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10951,TXN10951,INVALID_REFERENCE,Injected INVALID_REFERENCE scenario,True
+ORD10952,TXN10952,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10953,TXN10953,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10957,TXN10957,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10958,TXN10958,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10961,TXN10961,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10962,TXN10962B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10963,TXN10963,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10967,TXN10967B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD10968,TXN10968,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD10971,TXN10971,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10972,TXN10972,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10975,TXN10975,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10976,TXN10976,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD10979,TXN10979,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10980,TXN10980,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD10981,TXN10981,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10986,TXN10986,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD10988,TXN10988,MISSING_INVOICE,No invoice record exists for this order,True
+ORD10990,TXN10990,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10992,TXN10992,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10994,TXN10994,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD10995,TXN10995,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD10998,TXN10998,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD10999,TXN10999,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11001,TXN11001,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD11002,TXN11002,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11003,TXN11003,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11004,TXN11004,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD11007,TXN11007,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11008,TXN11008,PARTIAL_SETTLEMENT,Injected PARTIAL_SETTLEMENT scenario,True
+ORD11010,TXN11010,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD11014,TXN11014,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD11017,TXN11017,MISSING_INVOICE,No invoice record exists for this order,True
+ORD11020,TXN11020,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11025,TXN11025,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11028,TXN11028B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD11029,TXN11029,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11031,TXN11031,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11032,TXN11032,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD11033,TXN11033,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11035,TXN11035,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11038,TXN11038,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11044,TXN11044,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11046,TXN11046,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD11056,TXN11056,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD11058,TXN11058,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11059,TXN11059,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD11060,TXN11060,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11061,TXN11061,CURRENCY_MISMATCH,Injected CURRENCY_MISMATCH scenario,True
+ORD11069,TXN11069,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11072,TXN11072,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11077,TXN11077,UNEXPECTED_FEE,Injected UNEXPECTED_FEE scenario,True
+ORD11082,TXN11082,MISSING_SETTLEMENT,No settlement record exists for this captured payment,True
+ORD11087,TXN11087,MISSING_INVOICE,No invoice record exists for this order,True
+ORD11088,TXN11088,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11089,TXN11089,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11091,TXN11091,AMOUNT_MISMATCH,Injected AMOUNT_MISMATCH scenario,True
+ORD11093,TXN11093,MISSING_PAYMENT,Settlement/invoice exist but no payment transaction was ingested,True
+ORD11094,TXN11094,DATE_MISMATCH,Injected DATE_MISMATCH scenario,True
+ORD11096,TXN11096,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
+ORD11097,TXN11097B,POSSIBLE_DUPLICATE,Same order/customer/amount as another transaction within 1 day,True
+ORD11099,TXN11099,DUPLICATE_TRANSACTION,Exact duplicate payment row ingested twice,True
