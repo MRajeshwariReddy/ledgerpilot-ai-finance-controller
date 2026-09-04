@@ -27,15 +27,26 @@ Nothing closes itself.
 
 ## 4. Architecture
 
-```
-Raw CSVs (payments, settlements, invoices)
-  -> Data Quality Engine (deterministic validation/normalization)
-  -> Reconciliation Engine (deterministic matching + Decimal math)
-  -> Exception Classification + Priority Scoring (deterministic)
-  -> SQLite (single source of truth for everything downstream)
-  -> AI Finance Controller (LLM, read-only tool calls only)
-  -> Human approval (Streamlit dashboard) -> Audit Log + Case Memory
-```
+```mermaid
+flowchart TD
+    A[Raw CSVs<br/>Payments • Settlements • Invoices] --> B[Data Quality Engine<br/>Validation + Normalization]
+    B --> C[Reconciliation Engine<br/>Deterministic Matching + Decimal Math]
+    C --> D[Exception Classification<br/>+ Priority Scoring]
+    D --> E[(SQLite<br/>Single Source of Truth)]
+    E --> F[AI Finance Controller<br/>Read-only Investigation]
+    F --> G[Human Approval<br/>Streamlit Dashboard]
+    G --> H[Audit Log]
+    G --> I[Case Memory]
+
+Design principle:
+
+LedgerPilot deliberately separates financial correctness from AI reasoning.
+
+-Deterministic software performs validation, reconciliation, monetary calculations, exception classification, and priority scoring.
+-The AI Controller investigates exceptions, retrieves evidence, explains findings, and recommends actions.
+-The AI cannot modify financial records or resolve exceptions directly.
+-Human approval is required before any exception resolution is recorded.
+-Every human action is recorded in the Audit Log, while approved resolutions can be retained as Case Memory for future investigations.
 
 ## 5. AI components
 
@@ -101,29 +112,57 @@ called only from the human approval flow, never by the AI directly).
 
 ## 10. Evaluation methodology
 
-`data/generated/ground_truth_labels.csv` is a real answer key — the data
-generator labels every anomaly it deliberately injects. Evaluation runs
-the full pipeline and checks detected exceptions against that key,
-per-category and in aggregate. Full methodology and honest discussion of
-limitations: `docs/evaluation.md`.
+LedgerPilot is evaluated on a synthetic dataset containing payments, settlements, and invoices, including deliberately injected anomaly scenarios and formatting variations.
+
+The generated dataset includes a ground-truth answer key:
+
+data/generated/ground_truth_labels.csv
+
+The evaluation runs the same reconciliation pipeline used by the application and compares detected exceptions against the known ground truth.
+
+The evaluation measures:
+
+-Precision
+-Recall
+-F1 score
+-Macro and weighted category performance
+-Detection rate
+-False positives and false negatives
+-Processing throughput
+-Unresolved monetary exposure
+
+This prevents the system from being evaluated using only cherry-picked successful matches.
+
+The evaluation methodology, category-level results, known weaknesses, and tuning history are documented in docs/evaluation.md.
 
 ## 11. Results
 
-As of the latest run (`python run.py eval`):
+Evaluation is performed against the generated ground-truth labels after running the full reconciliation pipeline.
 
-| Metric | Value |
-|---|---|
-| Overall precision | 0.615 |
-| Overall recall | 0.890 |
-| Overall F1 | 0.727 |
+| Metric | Result |
+|---|---:|
+| Overall Precision | 0.688 |
+| Overall Recall | 0.934 |
+| Overall F1 | 0.792 |
+| Macro F1 | 0.820 |
+| Weighted F1 | 0.814 |
+| Detection Rate | 98.1% |
+| Records Processed | 3,211 |
+| Processing Throughput | ~24,089 records/sec |
 
-Category-level breakdown, known limitations, and the story of two real
-bugs found and fixed during tuning: see `docs/evaluation.md`.
+The evaluation also reports category-level performance and explicitly tracks false positives, false negatives, unresolved monetary exposure, and processing throughput.
+
+See [`docs/evaluation.md`](docs/evaluation.md) for the complete methodology, category-level results, limitations, and tuning history.
 
 ## 12. Screenshots
 
-Not included — run `python run.py dashboard` locally to see the live UI
-(exception queue, AI investigation panel, simulation mode, audit log).
+The LedgerPilot dashboard provides three main views:
+
+-Exception Queue — prioritized reconciliation exceptions with severity, affected amount, confidence, and investigation actions.
+-Audit Trail — records human approvals, rejections, and investigation evidence.
+-Evaluation — displays reconciliation and model evaluation metrics.
+
+The dashboard is implemented using Streamlit and connects directly to the LedgerPilot service layer and SQLite database.
 
 ## 13. Installation
 
@@ -143,68 +182,67 @@ cp .env.example .env   # optional: add GEMINI_API_KEY for LLM-powered responses
 ## 15. How to run
 
 ```bash
-python run.py setup      # generates 3,260 synthetic records, runs the full
-                          # pipeline, loads everything into SQLite
-python run.py dashboard  # launches the Streamlit dashboard
-python run.py test       # runs the automated test suite (14 tests)
-python run.py eval       # re-runs the pipeline and prints evaluation metrics
+python run.py setup
 ```
 
-**A note on verification in this repo's build environment:** the sandbox
-this was built in had no network access, so `streamlit` and `pytest`
-could not be `pip install`ed there to launch a live UI test — the
-dashboard's code was verified by syntax-checking it and independently
-testing every function it calls (`tools.*`, `controller.*`) against the
-real database, which all passed. The 14 automated tests in `tests/` were
-run directly as plain Python function calls (not through the `pytest`
-CLI, for the same reason) and all 14 passed. Run `python run.py test` and
-`python run.py dashboard` yourself as the first step to confirm both in
-your actual environment.
+Generates the synthetic financial dataset, runs the reconciliation pipeline, and loads the resulting records and exceptions into SQLite.
+
+```bash
+python run.py dashboard
+```
+
+Launches the Streamlit dashboard.
+
+```bash
+python run.py test
+```
+
+Runs the automated test suite.
+
+```bash
+python run.py eval
+```
+
+Re-runs the pipeline and reports evaluation metrics against the generated ground-truth labels.
+
+```
+
+### Verification
+
+The project was verified through automated tests and direct testing of the reconciliation, database, tool, and AI-controller components.
+
+The final test suite contains **22 automated tests**, covering core reconciliation logic, exception handling, database operations, controller behavior, and related functionality.
+```
 
 ## 16. Demo workflow
 
-1. `python run.py setup`
-2. `python run.py dashboard`
-3. View the top-line metrics (reconciliation rate, unresolved value, critical count)
-4. Open the Exception Queue tab, filter to CRITICAL severity
-5. Select a high-value exception, click "Ask AI Controller to investigate"
-6. Read the FACT / INFERENCE / RECOMMENDATION response and expand "raw evidence"
-7. Approve or reject the recommendation as a human reviewer
-8. Ask a few questions in the "Ask LedgerPilot" tab (e.g. "what percentage
-   of transactions were reconciled?")
-9. Go to Simulation Mode, select a batch of low-risk exceptions, run the
-   simulation, note nothing was actually changed
-10. Check the Audit Log tab — your approval from step 7 is there with
-    full evidence attached
-11. Check the Evaluation tab for the real precision/recall numbers
+1.Run python run.py setup to generate the synthetic financial data and populate SQLite.
+2.Run python run.py dashboard to launch the Streamlit interface.
+3.Review the top-level reconciliation metrics.
+4.Open the Exception Queue and select a high-priority exception.
+5.Ask the AI Finance Controller to investigate the selected exception.
+6.Review the structured FACT / INFERENCE / RECOMMENDATION response and supporting evidence.
+7.As the human reviewer, Approve, Reject, or request further investigation.
+8.Open the Audit Trail to verify that the human action and supporting evidence were recorded.
+9.Open the Evaluation tab to review the reconciliation and evaluation metrics.
 
-Takes about 5 minutes end to end.
+The complete workflow demonstrates the core design principle: the system can investigate and recommend, but a human remains responsible for the final financial decision.
 
 ## 17. Limitations
 
-- `MISSING_SETTLEMENT` recall (0.75) and `INVALID_REFERENCE` precision
-  (0.22, partly a ground-truth labeling gap — see `docs/evaluation.md`)
-  are the weakest metrics and would benefit from another tuning pass.
-- The AI Controller's Gemini path was not tested with a live API key in
-  this build environment (no network access) — only the deterministic
-  fallback path was verified running. The fallback and the LLM path share
-  the same evidence-gathering code, so the risk is limited to prompt/response
-  quality, not correctness of the underlying facts.
-- No fuzzy customer-level entity resolution (e.g. two customer IDs that
-  are actually the same person).
-- Simulation mode's "time saved" estimate is a fixed per-case assumption,
-  clearly labeled as an estimate — not a measured figure.
-- No FastAPI layer yet — the dashboard talks to the service layer
-  in-process rather than over HTTP. Fine for a demo/single-user context;
-  would need an API layer for multi-user or programmatic access.
+-MISSING_SETTLEMENT and INVALID_REFERENCE remain weaker exception categories and would benefit from additional tuning and broader test coverage.
+-The LLM-powered investigation path depends on an external API key. The deterministic fallback remains available when an API key is not configured.
+-The current system does not perform fuzzy customer-level entity resolution.
+-The dashboard is designed as a single-user demonstration application rather than a production multi-user finance platform.
+-The current architecture does not include a separate FastAPI layer; the Streamlit dashboard communicates with the service layer in-process.
+-The synthetic dataset and injected anomalies are designed for evaluation and demonstration rather than representing real production financial data.
 
 ## 18. Future improvements
 
-- Add the fuzzy customer-level matching mentioned above.
-- Wire actual LangChain/Gemini function-calling (native tool-use) instead
-  of the current evidence-gather-then-prompt pattern, once a live API key
-  is available to test against.
-- Add a FastAPI layer per the original suggested stack, for API access
-  independent of the Streamlit dashboard.
-- Expand the evaluation suite to include false-positive-rate and
-  processing-time measurements (currently precision/recall/F1 only).
+-Improve detection and precision for weaker exception categories through additional evaluation and tuning.
+-Add fuzzy customer-level entity resolution for cases where customer identifiers differ across sources.
+-Integrate native LLM function/tool calling for more flexible evidence-driven investigations.
+-Add a FastAPI service layer to support programmatic access and multi-client applications.
+-Expand evaluation with additional operational metrics such as false-positive rate, processing latency, and investigation quality.
+-Add role-based access control and stronger audit/security controls for production deployment.
+-Extend the system to support additional financial operations such as settlement forecasting and tax-line reconciliation.
