@@ -156,13 +156,23 @@ See [`docs/evaluation.md`](docs/evaluation.md) for the complete methodology, cat
 
 ## 12. Screenshots
 
-The LedgerPilot dashboard provides three main views:
+### Exception Queue
 
-1. Exception Queue — prioritized reconciliation exceptions with severity, affected amount, confidence, and investigation actions.
-2. Audit Trail — records human approvals, rejections, and investigation evidence.
-3. Evaluation — displays reconciliation and model evaluation metrics.
+![LedgerPilot Exception Queue](docs/screenshots/01-exception-queue.png)
 
-The dashboard is implemented using Streamlit and connects directly to the LedgerPilot service layer and SQLite database.
+The main workflow provides reconciliation metrics and a prioritized queue of exceptions requiring human review.
+
+### AI Investigation
+
+![LedgerPilot AI Investigation](docs/screenshots/02-ai-investigation.png)
+
+The AI Finance Controller investigates exceptions using read-only evidence and presents findings as FACT / INFERENCE / RECOMMENDATION.
+
+### Audit Trail
+
+![LedgerPilot Audit Trail](docs/screenshots/03-audit-trail.png)
+
+Human decisions and supporting evidence are recorded in the audit trail for accountability and review.
 
 ## 13. Installation
 
